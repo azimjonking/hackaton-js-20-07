@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    color: white;
+    background-color: #1d2630;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+.alert {
+    font-family: monospace;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+form {
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .form-group label {
+    font-size: 1.5rem;
+}
+
+form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+form .btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form .btns button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+form .btns #add, 
+form .btns #add:active {
+    background: green;
+}
+
+form .btns #add:hover {
+    background: rgb(33, 194, 33);
+}
+
+
+form .btns #clear, 
+form .btns #clear:active {
+    background: red;
+}
+
+form .btns #clear:hover {
+    background: rgb(216, 33, 33);
+}
+
+
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    background: #121518;
+    border-collapse: collapse;
+}
+
+tbody {
+    background: #2c3034;
+}
+th {
+    text-align: left;
+}
+th, td {
+    padding: 10px;
+}
+
+tbody tr {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+#edit,
+#delete {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+
+table #edit, 
+table #add:active {
+    background: yellow;
+    color: #000;
+}
+
+table #edit:hover {
+    background: rgb(183, 183, 74);
+}
+
+
+table #delete, 
+table #delete:active {
+    background: red;
+}
+
+table #delete:hover {
+    background: rgb(216, 33, 33);
+}
